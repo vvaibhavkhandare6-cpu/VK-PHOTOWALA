@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VK Photowala | Wedding Photographer</title>
+
+<meta name="description"
+content="VK Photowala - Wedding, Pre-Wedding, Haldi and Event Photography by Vaibhav Khandare.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+    line-height:1.6;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 7%;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 60px;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+}
+
+.hero h1{
+    font-size:clamp(45px,8vw,90px);
+    letter-spacing:4px;
+}
+
+.hero h1 span{
+    color:#d4af37;
+}
+
+.hero p{
+    font-size:20px;
+    margin:15px 0 30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:5px;
+    border:1px solid #d4af37;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+section{
+    padding:90px 7%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:40px;
+}
+
+.title span{
+    color:#d4af37;
+}
+
+.about{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    color:#ccc;
+    font-size:18px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#151515;
+    padding:35px 25px;
+    text-align:center;
+    border:1px solid #292929;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#d4af37;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.package{
+    max-width:600px;
+    margin:auto;
+    background:#151515;
+    padding:40px;
+    text-align:center;
+    border:1px solid #333;
+}
+
+.package h3{
+    color:#d4af37;
+    font-size:28px;
+}
+
+.package li{
+    list-style:none;
+    padding:8px;
+    color:#ccc;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    padding:30px;
+    text-align:center;
+    background:#050505;
+    color:#888;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25d366;
+    color:white;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:25px;
+    z-index:2000;
+}
+
+@media(max-width:700px){
+
+    nav{
+        padding:15px 5%;
+    }
+
+    nav .links{
+        display:none;
+    }
+
+    section{
+        padding:70px 5%;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .gallery img{
+        height:300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">VK <span>PHOTOWALA</span></div>
+
+    <div class="links">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <div>
+        <h1>VK <span>PHOTOWALA</span></h1>
+
+        <p>
+            Wedding & Pre-Wedding Photographer
+        </p>
+
+        <p>
+            Capturing Real • Emotional • Timeless Memories
+        </p>
+
+        <a class="btn" href="#portfolio">VIEW PORTFOLIO</a>
+
+        <a class="btn"
+        href="https://wa.me/91XXXXXXXXXX?text=Hello%20VK%20Photowala%2C%20I%20want%20to%20know%20about%20your%20photography%20packages.">
+        WHATSAPP
+        </a>
+    </div>
+</section>
+
+<section id="portfolio">
+
+    <div class="title">
+        <h2>Our <span>Portfolio</span></h2>
+        <p>Stories captured with emotion.</p>
+    </div>
+
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80">
+
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80">
+
+        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=900&q=80">
+
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80">
+
+    </div>
+
+</section>
+
+<section id="services">
+
+    <div class="title">
+        <h2>Our <span>Services</span></h2>
+    </div>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Wedding</h3>
+            <p>Candid photography, traditional photography and cinematic wedding films.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pre-Wedding</h3>
+            <p>Creative couple portraits and cinematic pre-wedding stories.</p>
+        </div>
+
+        <div class="card">
+            <h3>Haldi & Mehndi</h3>
+            <p>Colorful and emotional moments captured naturally.</p>
+        </div>
+
+        <div class="card">
+            <h3>Events</h3>
+            <p>Professional photography and videography for special events.</p>
+        </div>
+
+        <div class="card">
+            <h3>Baby & Family</h3>
+            <p>Beautiful memories of your family and celebrations.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <div class="title">
+        <h2>About <span>VK Photowala</span></h2>
+    </div>
+
+    <div class="about">
+
+        <p>
+            Hi, I'm <strong>Vaibhav Khandare</strong>, the photographer behind
+            VK Photowala.
+        </p>
+
+        <br>
+
+        <p>
+            I believe photography is more than just taking pictures.
+            It's about preserving emotions, relationships and the little
+            moments that become priceless memories.
+        </p>
+
+        <br>
+
+        <p>
+            From weddings and pre-weddings to haldi, mehndi and special events,
+            VK Photowala focuses on natural, emotional and timeless storytelling.
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="title">
+        <h2>Photography <span>Packages</span></h2>
+    </div>
+
+    <div class="package">
+
+        <h3>Customized Packages</h3>
+
+        <br>
+
+        <ul>
+            <li>✓ Candid Photography</li>
+            <li>✓ Traditional Photography</li>
+            <li>✓ Cinematic Videography</li>
+            <li>✓ Wedding Films</li>
+            <li>✓ Edited Photos</li>
+            <li>✓ Instagram Reels</li>
+            <li>✓ Album Options</li>
+        </ul>
+
+        <br>
+
+        <p>
+            Every wedding is different. Contact us for a customized package.
+        </p>
+
+        <br>
+
+        <a class="btn"
+        href="https://wa.me/91XXXXXXXXXX">
+        GET QUOTE
+        </a>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <div class="title">
+        <h2>Let's <span>Create Memories</span></h2>
+    </div>
+
+    <div class="contact">
+
+        <p>
+            Available for Weddings, Pre-Weddings & Events.
+        </p>
+
+        <br>
+
+        <a class="btn"
+        href="https://wa.me/91XXXXXXXXXX">
+        WhatsApp Us
+        </a>
+
+        <a class="btn"
+        href="https://instagram.com/vk_photowala_1"
+        target="_blank">
+        Instagram
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 VK Photowala | Vaibhav Khandare</p>
+    <p>Wedding Photography • Cinematic Films • Memories</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/91XXXXXXXXXX"
+target="_blank">
+💬
+</a>
+
+</body>
+</html
