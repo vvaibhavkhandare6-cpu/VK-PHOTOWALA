@@ -3,450 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>VK Photowala | Wedding Photographer</title>
-
-<meta name="description"
-content="VK Photowala - Wedding, Pre-Wedding, Haldi and Event Photography by Vaibhav Khandare.">
-
+<meta name="description" content="VK Photowala - Wedding, Pre-Wedding, Haldi, Baby Shoot and cinematic photography by Vaibhav Khandare.">
+<title>VK Photowala | Wedding & Pre-Wedding Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#0b0b0b;
-    color:#fff;
-    line-height:1.6;
-}
-
-nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
-    background:rgba(0,0,0,.85);
-    backdrop-filter:blur(10px);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 7%;
-}
-
-.logo{
-    font-size:25px;
-    font-weight:bold;
-    letter-spacing:2px;
-}
-
-.logo span{
-    color:#d4af37;
-}
-
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-left:22px;
-    font-size:14px;
-}
-
-nav a:hover{
-    color:#d4af37;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:120px 20px 60px;
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),
-    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85")
-    center/cover;
-}
-
-.hero h1{
-    font-size:clamp(45px,8vw,90px);
-    letter-spacing:4px;
-}
-
-.hero h1 span{
-    color:#d4af37;
-}
-
-.hero p{
-    font-size:20px;
-    margin:15px 0 30px;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:5px;
-    border:1px solid #d4af37;
-    color:#fff;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#d4af37;
-    color:#000;
-}
-
-section{
-    padding:90px 7%;
-}
-
-.title{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.title h2{
-    font-size:40px;
-}
-
-.title span{
-    color:#d4af37;
-}
-
-.about{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
-    color:#ccc;
-    font-size:18px;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#151515;
-    padding:35px 25px;
-    text-align:center;
-    border:1px solid #292929;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#d4af37;
-}
-
-.card h3{
-    color:#d4af37;
-    margin-bottom:10px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
-}
-
-.gallery img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-    transition:.4s;
-}
-
-.gallery img:hover{
-    transform:scale(1.03);
-}
-
-.package{
-    max-width:600px;
-    margin:auto;
-    background:#151515;
-    padding:40px;
-    text-align:center;
-    border:1px solid #333;
-}
-
-.package h3{
-    color:#d4af37;
-    font-size:28px;
-}
-
-.package li{
-    list-style:none;
-    padding:8px;
-    color:#ccc;
-}
-
-.contact{
-    text-align:center;
-}
-
-footer{
-    padding:30px;
-    text-align:center;
-    background:#050505;
-    color:#888;
-}
-
-.whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25d366;
-    color:white;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:25px;
-    z-index:2000;
-}
-
-@media(max-width:700px){
-
-    nav{
-        padding:15px 5%;
-    }
-
-    nav .links{
-        display:none;
-    }
-
-    section{
-        padding:70px 5%;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .gallery img{
-        height:300px;
-    }
-}
+:root{--bg:#0b0b0c;--card:#141416;--text:#f7f4ee;--muted:#aaa6a0;--gold:#d8b36a;--line:#29292c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(11,11,12,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:700;letter-spacing:1px}.logo span{color:var(--gold);font-size:12px;display:block;letter-spacing:3px}.links{display:flex;gap:24px;font-size:13px;color:#ddd}.links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.25)),url("images/hero.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,var(--bg))}
+.hero-content{position:relative;z-index:2;padding-top:60px;max-width:720px}.eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:12px;font-weight:600}.hero h1{font-family:"DM Serif Display",serif;font-size:clamp(58px,10vw,120px);line-height:.9;margin:18px 0}.hero p{color:#ddd;max-width:580px;line-height:1.8}.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:14px 21px;border-radius:999px;border:1px solid #777;background:rgba(0,0,0,.25);font-size:13px}.btn.primary{background:var(--gold);color:#111;border-color:var(--gold);font-weight:700}
+section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:35px}.section-head h2{font-family:"DM Serif Display",serif;font-size:48px;margin:0}.section-head p{color:var(--muted);max-width:480px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.work{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;min-height:330px}.work img{width:100%;height:270px;display:block;object-fit:cover}.work .cap{padding:16px}.cap b{font-size:15px}.cap small{display:block;color:var(--muted);margin-top:5px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;border:1px solid var(--line)}.about h2{font-family:"DM Serif Display",serif;font-size:54px;margin:0 0 20px}.about p{color:var(--muted);line-height:1.9}.services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.service{padding:25px;border:1px solid var(--line);border-radius:16px;background:#101012}.service h3{margin:0 0 8px}.service p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.cta{border:1px solid var(--line);border-radius:24px;padding:55px;text-align:center;background:linear-gradient(135deg,#171513,#101011)}.cta h2{font-family:"DM Serif Display",serif;font-size:52px;margin:0 0 12px}.cta p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:750px){.links{display:none}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:30px}.services{grid-template-columns:1fr}.section-head{display:block}.section-head h2{font-size:40px;margin-bottom:12px}.cta{padding:35px 20px}.cta h2{font-size:40px}.hero{min-height:88vh}}
 </style>
 </head>
-
 <body>
+<nav><div class="container navin">
+<a class="logo" href="#home">VK <span>PHOTOWALA</span></a>
+<div class="links"><a href="#work">Portfolio</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+</div></nav>
 
-<nav>
-    <div class="logo">VK <span>PHOTOWALA</span></div>
+<header class="hero" id="home"><div class="container hero-content">
+<div class="eyebrow">Wedding • Pre-Wedding • Films</div>
+<h1>Memories,<br>made timeless.</h1>
+<p>I'm Vaibhav Khandare — a wedding and pre-wedding photographer creating real, candid and emotional stories that you can relive for years.</p>
+<div class="btns"><a class="btn primary" href="#work">View Portfolio</a><a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%20VK%20Photowala%2C%20I%20want%20to%20know%20about%20your%20photography%20packages." target="_blank">WhatsApp Me</a></div>
+</div></header>
 
-    <div class="links">
-        <a href="#home">Home</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
+<section id="work"><div class="container">
+<div class="section-head"><h2>Selected Work</h2><p>Replace these sample images with your own photos. Keep the same filenames and your gallery will update automatically.</p></div>
+<div class="grid">
+<div class="work"><img src="images/prewedding-1.jpg" alt="Pre-wedding photography"><div class="cap"><b>Pre-Wedding</b><small>Love stories in every frame</small></div></div>
+<div class="work"><img src="images/wedding-1.jpg" alt="Wedding photography"><div class="cap"><b>Wedding</b><small>Real moments. Real emotions.</small></div></div>
+<div class="work"><img src="images/haldi-1.jpg" alt="Haldi photography"><div class="cap"><b>Haldi & Celebrations</b><small>Color, laughter and memories</small></div></div>
+<div class="work"><img src="images/baby-1.jpg" alt="Baby photography"><div class="cap"><b>Baby & Family</b><small>Little moments, forever memories</small></div></div>
+<div class="work"><img src="images/prewedding-2.jpg" alt="Pre-wedding couple"><div class="cap"><b>Cinematic Portraits</b><small>Editorial-inspired frames</small></div></div>
+<div class="work"><img src="images/wedding-2.jpg" alt="Wedding couple"><div class="cap"><b>Couple Stories</b><small>Your story, your way</small></div></div>
+</div></div></section>
 
-<section class="hero" id="home">
-    <div>
-        <h1>VK <span>PHOTOWALA</span></h1>
+<section id="about"><div class="container about">
+<img src="images/about.jpg" alt="Vaibhav Khandare - VK Photowala">
+<div><div class="eyebrow">Behind the camera</div><h2>Hi, I'm Vaibhav.</h2><p>Welcome to VK Photowala. I photograph weddings, pre-weddings and celebrations with a focus on candid emotions, natural expressions and timeless storytelling.</p><p>Based in Maharashtra and available for destination celebrations. Let's create photographs that feel like you.</p><div class="btns"><a class="btn primary" href="#contact">Let's Talk</a></div></div>
+</div></section>
 
-        <p>
-            Wedding & Pre-Wedding Photographer
-        </p>
+<section id="services"><div class="container">
+<div class="section-head"><h2>What I Shoot</h2><p>Custom coverage is available for intimate functions as well as complete wedding celebrations.</p></div>
+<div class="services">
+<div class="service"><h3>Wedding Photography</h3><p>Candid + traditional photography, couple portraits and complete event coverage.</p></div>
+<div class="service"><h3>Pre-Wedding</h3><p>Concept-driven couple sessions with natural and cinematic frames.</p></div>
+<div class="service"><h3>Haldi • Mehndi • Sangeet</h3><p>Colorful candid coverage for every celebration before the wedding.</p></div>
+<div class="service"><h3>Baby & Family</h3><p>Baby showers, naming ceremonies, family portraits and milestones.</p></div>
+</div></div></section>
 
-        <p>
-            Capturing Real • Emotional • Timeless Memories
-        </p>
+<section id="contact"><div class="container"><div class="cta">
+<div class="eyebrow">Available for bookings</div><h2>Let's tell your story.</h2><p>Send your date, event and location. I'll get back to you with availability and package details.</p>
+<div class="btns" style="justify-content:center"><a class="btn primary" href="tel:+91XXXXXXXXXX">Call Now</a><a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a><a class="btn" href="https://instagram.com/vk_photowala_1" target="_blank">Instagram</a></div>
+</div></div></section>
 
-        <a class="btn" href="#portfolio">VIEW PORTFOLIO</a>
-
-        <a class="btn"
-        href="https://wa.me/91XXXXXXXXXX?text=Hello%20VK%20Photowala%2C%20I%20want%20to%20know%20about%20your%20photography%20packages.">
-        WHATSAPP
-        </a>
-    </div>
-</section>
-
-<section id="portfolio">
-
-    <div class="title">
-        <h2>Our <span>Portfolio</span></h2>
-        <p>Stories captured with emotion.</p>
-    </div>
-
-    <div class="gallery">
-
-        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80">
-
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80">
-
-        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=900&q=80">
-
-        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80">
-
-    </div>
-
-</section>
-
-<section id="services">
-
-    <div class="title">
-        <h2>Our <span>Services</span></h2>
-    </div>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>Wedding</h3>
-            <p>Candid photography, traditional photography and cinematic wedding films.</p>
-        </div>
-
-        <div class="card">
-            <h3>Pre-Wedding</h3>
-            <p>Creative couple portraits and cinematic pre-wedding stories.</p>
-        </div>
-
-        <div class="card">
-            <h3>Haldi & Mehndi</h3>
-            <p>Colorful and emotional moments captured naturally.</p>
-        </div>
-
-        <div class="card">
-            <h3>Events</h3>
-            <p>Professional photography and videography for special events.</p>
-        </div>
-
-        <div class="card">
-            <h3>Baby & Family</h3>
-            <p>Beautiful memories of your family and celebrations.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="about">
-
-    <div class="title">
-        <h2>About <span>VK Photowala</span></h2>
-    </div>
-
-    <div class="about">
-
-        <p>
-            Hi, I'm <strong>Vaibhav Khandare</strong>, the photographer behind
-            VK Photowala.
-        </p>
-
-        <br>
-
-        <p>
-            I believe photography is more than just taking pictures.
-            It's about preserving emotions, relationships and the little
-            moments that become priceless memories.
-        </p>
-
-        <br>
-
-        <p>
-            From weddings and pre-weddings to haldi, mehndi and special events,
-            VK Photowala focuses on natural, emotional and timeless storytelling.
-        </p>
-
-    </div>
-
-</section>
-
-<section>
-
-    <div class="title">
-        <h2>Photography <span>Packages</span></h2>
-    </div>
-
-    <div class="package">
-
-        <h3>Customized Packages</h3>
-
-        <br>
-
-        <ul>
-            <li>✓ Candid Photography</li>
-            <li>✓ Traditional Photography</li>
-            <li>✓ Cinematic Videography</li>
-            <li>✓ Wedding Films</li>
-            <li>✓ Edited Photos</li>
-            <li>✓ Instagram Reels</li>
-            <li>✓ Album Options</li>
-        </ul>
-
-        <br>
-
-        <p>
-            Every wedding is different. Contact us for a customized package.
-        </p>
-
-        <br>
-
-        <a class="btn"
-        href="https://wa.me/91XXXXXXXXXX">
-        GET QUOTE
-        </a>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <div class="title">
-        <h2>Let's <span>Create Memories</span></h2>
-    </div>
-
-    <div class="contact">
-
-        <p>
-            Available for Weddings, Pre-Weddings & Events.
-        </p>
-
-        <br>
-
-        <a class="btn"
-        href="https://wa.me/91XXXXXXXXXX">
-        WhatsApp Us
-        </a>
-
-        <a class="btn"
-        href="https://instagram.com/vk_photowala_1"
-        target="_blank">
-        Instagram
-        </a>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <p>© 2026 VK Photowala | Vaibhav Khandare</p>
-    <p>Wedding Photography • Cinematic Films • Memories</p>
-
-</footer>
-
-<a class="whatsapp"
-href="https://wa.me/91XXXXXXXXXX"
-target="_blank">
-💬
-</a>
-
-</body>
-</html
+<footer><div class="container foot"><span>© 2026 VK Photowala • Vaibhav Khandare</span><span>Wedding & Pre-Wedding Photography</span></div></footer>
+</body></html>
